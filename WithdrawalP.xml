@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests"  name="Suite">
+
+     <listeners>
+		<listener class-name="utility.listners"></listener>
+		<listener class-name="Analyzer.Mytransform"></listener>
+	</listeners>
+	
+	
+  <test thread-count="2" name="Test">
+	 
+    <classes>
+      <class name="Test_TTS_Withdrawal.Welcome_Test"/>
+     
+      
+    </classes>
+    
+    
+  </test> <!-- Test -->
+  
+   <test thread-count="2" name="Test1">
+	 
+    <classes>
+   
+      <class name="test.TestClassForParallel"/>
+      
+    </classes>
+    
+    
+  </test> <!-- Test -->
+  </suite> <!-- Suite -->
+
+  

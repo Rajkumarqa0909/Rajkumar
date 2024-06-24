@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="utility.listners"/>
+    <listener class-name="Analyzer.Mytransform"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="Test1(failed)">
+    <classes>
+      <class name="test.TestClassForParallel">
+        <methods>
+          <include name="start"/>
+          <include name="apyDeath_Withdrawal"/>
+        </methods>
+      </class> <!-- test.TestClassForParallel -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="5" parallel="tests" name="Test(failed)">
+    <classes>
+      <class name="Test_TTS_Withdrawal.Welcome_Test">
+        <methods>
+          <include name="test_Initiate_request"/>
+          <include name="status_Check"/>
+          <include name="start"/>
+        </methods>
+      </class> <!-- Test_TTS_Withdrawal.Welcome_Test -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
